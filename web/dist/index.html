@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Identity</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="none">
+<main class="identity-shell">
+<section class="identity-card">
+<div class="accent-line"></div>
+<header class="brand">
+  <div class="brand-mark"><img src="logo.png" alt="Identity"></div>
+  <div class="brand-copy">
+    <span class="eyebrow">CITY REGISTRATION</span>
+    <h1>Create your <strong>identity</strong></h1>
+    <p>Set up your character profile to enter the city.</p>
+  </div>
+  <div class="status"><span class="status-dot"></span>SERVER NAME HERE</div>
+</header>
+<div class="divider"></div>
+<form class="form" id="register" novalidate>
+  <div class="section-heading"><span class="section-number">01</span><div><h2>Personal information</h2><p>Tell us how your character will be known.</p></div></div>
+  <div class="grid two">
+    <div class="field-wrap"><label for="firstname">First name</label><div class="input-box"><span class="input-icon">A</span><input id="firstname" name="firstname" type="text" placeholder="e.g. Michael" autocomplete="off"></div><span class="error" id="firstname-error"></span></div>
+    <div class="field-wrap"><label for="lastname">Last name</label><div class="input-box"><span class="input-icon">Z</span><input id="lastname" name="lastname" type="text" placeholder="e.g. Carter" autocomplete="off"></div><span class="error" id="lastname-error"></span></div>
+  </div>
+  <div class="grid two">
+    <div class="field-wrap"><label for="dob">Date of birth</label><div class="input-box"><span class="input-icon">▣</span><input id="dob" name="dob" type="date"></div><span class="error" id="dob-error"></span></div>
+    <div class="field-wrap"><label for="height">Height</label><div class="input-box"><span class="input-icon">↕</span><input id="height" name="height" type="number" min="120" max="220" placeholder="175"><span class="unit">CM</span></div><span class="error" id="height-error"></span></div>
+  </div>
+  <div class="field-wrap">
+    <label>Gender</label>
+    <div class="gender-grid">
+      <div class="gender-option"><input type="radio" id="male" name="gender" value="m"><label for="male"><span class="gender-symbol">♂</span><span><b>Male</b><small>Character identity</small></span><span class="check">✓</span></label></div>
+      <div class="gender-option"><input type="radio" id="female" name="gender" value="f"><label for="female"><span class="gender-symbol">♀</span><span><b>Female</b><small>Character identity</small></span><span class="check">✓</span></label></div>
+    </div>
+    <span class="error" id="gender-error"></span>
+  </div>
+  <div class="footer-row">
+    <div class="tip"><span>i</span>Your details are saved securely to your character profile.</div>
+    <button class="submit" id="submit" type="submit"><span>Create character</span><b>→</b></button>
+  </div>
+</form>
+</section>
+</main>
+<script src="assets/app.js"></script>
+</body>
+</html>
